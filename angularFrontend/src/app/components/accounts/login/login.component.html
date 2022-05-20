@@ -1,0 +1,50 @@
+<a routerLink="/login" routerLinkActive="active"></a>
+<!-- navbar  -->
+<app-navbar></app-navbar>
+<!-- login Page Form -->
+<div class="bootstrap-wrapper">
+  <div class="container mt"></div>
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="container text-center">
+        <img class="img-fuild" style="width: 100px" src="assets/Login.png" />
+        <!-- Reactive form -->
+        <form [formGroup]="loginForm" (ngSubmit)="userlogin()">
+          <mat-form-field class="full-width">
+            <!-- Username Input -->
+            <mat-label>Username</mat-label>
+            <input
+              formControlName="username"
+              name="username"
+              class="form-control"
+              id="username"
+              type="text"
+              matInput
+            />
+          </mat-form-field>
+          <!-- Password Input -->
+          <mat-form-field class="full-width">
+            <mat-label>Password</mat-label>
+
+            <input
+              formControlName="password"
+              name="password"
+              class="form-control"
+              id="password"
+              type="password"
+              matInput
+            />
+          </mat-form-field>
+          <div class="container text-center">
+            <button type="submit" mat-raised-button color="primary">
+              Login
+            </button>
+            <button style="margin-left: 10px" type="reset" mat-raised-button>
+              Reset
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

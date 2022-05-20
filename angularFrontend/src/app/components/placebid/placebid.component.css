@@ -1,0 +1,13 @@
+.example-spacer{
+    flex:1 1 auto;
+}
+.mat-icon-button {
+    margin-left: 15px;
+}
+.mat-raised-button:not([class*=mat-elevation-z]) {
+   margin-right: 10px;
+}
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 596px;
+    margin-top: 30px;
+}

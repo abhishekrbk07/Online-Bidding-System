@@ -1,0 +1,12 @@
+.example-spacer{
+    flex:1 1 auto;
+}
+.mat-icon-button {
+    margin-left: 15px;
+}
+.banner{
+    position: relative;
+}
+.mat-icon-button{
+    margin-left: 30px;
+}

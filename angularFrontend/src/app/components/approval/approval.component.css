@@ -1,0 +1,25 @@
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  /* 
+  td, th {
+    width: 25%;
+  } */
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .example-spacer{
+    flex:1 1 auto;
+}
+.mat-icon-button {
+    margin-left: 35px;
+}
+.mat-raised-button:not([class*=mat-elevation-z]) {
+   margin-right: 10px;
+}

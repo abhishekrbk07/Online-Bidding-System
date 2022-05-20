@@ -1,0 +1,30 @@
+<mat-toolbar color="primary">
+  <span><a mat-icon-button routerLink="/home">Online Bidding App</a></span>
+  <span class="example-spacer"></span>
+
+  <a mat-icon-button routerLink="/home">Home</a>
+  <a mat-icon-button routerLink="/login" (click)="onClear()">Logout</a> 
+
+
+</mat-toolbar>
+<div class="container">
+  <form [formGroup]="formValue">
+    <div class="mb-3">
+      <label for="biddingPrice" class="form-label">BID</label>
+      <input
+        type="number"
+        formControlName="biddingPrice"
+        class="form-control"
+        id="bidAmount"
+      />
+    </div>
+    <div class="container text-center">
+    <button style="margin-left: 10px" type="reset" mat-raised-button>
+      Reset
+    </button>
+    <button mat-raised-button color="primary" (click)="placeBidding()">
+      Submit
+    </button>
+    </div>
+  </form>
+</div>

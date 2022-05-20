@@ -1,0 +1,14 @@
+<a routerLink="/home" routerLinkActive="active"></a>
+<mat-toolbar color="primary">
+  <span><a mat-icon-button routerLink="/">Online Bidding App</a></span>
+  <span class="example-spacer"></span>
+  <a mat-icon-button routerLink="/bidding">Bidding</a>
+  <a mat-icon-button routerLink="/login" (click)="logout()">Logout</a>
+</mat-toolbar>
+<!-- banner -->
+<section class="banner">
+  <owl-carousel-o [options]="testimonalSlider">
+    <ng-template carouselSlide><img src="assets/auction1.png" /></ng-template>
+    <ng-template carouselSlide><img src="assets/auction2.jpg" /></ng-template>
+  </owl-carousel-o>
+</section>

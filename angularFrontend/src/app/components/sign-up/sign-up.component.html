@@ -1,0 +1,59 @@
+<a routerLink="/signup" routerLinkActive="active"></a>
+<app-navbar></app-navbar>
+<!-- Reactive form -->
+<div class="bootstrap-wrapper">
+  <div class="container mt"></div>
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="container text-center">
+        <img class="img-fuild" style="width: 100px" src="assets/user.png" />
+        <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+          <mat-form-field class="full-width">
+            <mat-label>Name</mat-label>
+
+            <input
+              formControlName="name"
+              name="name"
+              class="form-control"
+              id="name"
+              type="name"
+              matInput
+            />
+          </mat-form-field>
+          <mat-form-field class="full-width">
+            <mat-label>username</mat-label>
+            <input
+              formControlName="username"
+              name="username"
+              class="form-control"
+              id="username"
+              type="text"
+              matInput
+            />
+          </mat-form-field>
+        
+          <mat-form-field class="full-width">
+            <mat-label>Password</mat-label>
+
+            <input
+              formControlName="password"
+              name="password"
+              class="form-control"
+              id="password"
+              type="password"
+              matInput
+            />
+          </mat-form-field>
+          <div class="container text-center">
+            <button type="submit" mat-raised-button color="primary">
+              SignUp
+            </button>
+            <button style="margin-left: 10px" type="reset" mat-raised-button>
+              Reset
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

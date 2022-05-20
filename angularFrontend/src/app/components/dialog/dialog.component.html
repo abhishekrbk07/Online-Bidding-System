@@ -1,0 +1,35 @@
+<!-- Form for post bidding -->
+<form [formGroup]="formValue">
+  <div class="mb-3">
+    <label for="name" class="form-label">productName</label>
+    <input
+      type="name"
+      formControlName="productName"
+      class="form-control"
+      id="productName"
+      aria-describedby="name"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="StartingBid" class="form-label">price</label>
+    <input
+      type="number"
+      formControlName="price"
+      class="form-control"
+      id="price"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="floatingTextarea">DESCRIPTION</label>
+    <textarea
+      formControlName="description"
+      class="form-control"
+      placeholder="Leave a Description here"
+      id="floatingTextarea"
+    ></textarea>
+  </div>
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button mat-raised-button color="primary" (click)="addBidding()">
+    {{ actionBtn }}
+  </button>
+</form>
